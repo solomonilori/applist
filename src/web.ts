@@ -1,10 +1,10 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { AppListPlugin } from './definitions';
+import type { ApplistPlugin, Apps } from './definitions';
 
-export class AppListWeb extends WebPlugin implements AppListPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+export class ApplistWeb extends WebPlugin implements ApplistPlugin {
+  async getInstalledApps(): Promise<Apps> {
+    const emptyApps: Apps = {apps: []}; 
+    return emptyApps;
   }
 }
