@@ -13,25 +13,42 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`getInstalledApps()`](#getinstalledapps)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### getInstalledApps()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+getInstalledApps() => Promise<Apps>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;<a href="#apps">Apps</a>&gt;</code>
 
 --------------------
+
+
+### Interfaces
+
+
+#### Apps
+
+| Prop       | Type               |
+| ---------- | ------------------ |
+| **`apps`** | <code>App[]</code> |
+
+
+#### App
+
+| Prop           | Type                |
+| -------------- | ------------------- |
+| **`appId`**    | <code>string</code> |
+| **`appName`**  | <code>string</code> |
+| **`iconUrl`**  | <code>string</code> |
+| **`category`** | <code>string</code> |
 
 </docgen-api>

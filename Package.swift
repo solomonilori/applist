@@ -7,22 +7,22 @@ let package = Package(
     products: [
         .library(
             name: "AppList",
-            targets: ["AppListPlugin"])
+            targets: ["ApplistPlugin"])
     ],
     dependencies: [
         .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", from: "7.0.0")
     ],
     targets: [
         .target(
-            name: "AppListPlugin",
+            name: "ApplistPlugin",
             dependencies: [
                 .product(name: "Capacitor", package: "capacitor-swift-pm"),
                 .product(name: "Cordova", package: "capacitor-swift-pm")
             ],
-            path: "ios/Sources/AppListPlugin"),
+            path: "ios/Sources/ApplistPlugin"),
         .testTarget(
-            name: "AppListPluginTests",
-            dependencies: ["AppListPlugin"],
-            path: "ios/Tests/AppListPluginTests")
+            name: "ApplistPluginTests",
+            dependencies: ["ApplistPlugin"],
+            path: "ios/Tests/ApplistPluginTests")
     ]
 )

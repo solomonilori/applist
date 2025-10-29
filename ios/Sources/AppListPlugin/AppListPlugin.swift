@@ -5,9 +5,9 @@ import Capacitor
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitorjs.com/docs/plugins/ios
  */
-@objc(AppListPlugin)
-public class AppListPlugin: CAPPlugin, CAPBridgedPlugin {
-    public let identifier = "AppListPlugin"
+@objc(ApplistPlugin)
+public class ApplistPlugin: CAPPlugin, CAPBridgedPlugin {
+    public let identifier = "ApplistPlugin"
     public let jsName = "AppList"
     public let pluginMethods: [CAPPluginMethod] = [
         CAPPluginMethod(name: "echo", returnType: CAPPluginReturnPromise)

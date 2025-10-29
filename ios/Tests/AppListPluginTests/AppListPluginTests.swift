@@ -1,5 +1,5 @@
 import XCTest
-@testable import AppListPlugin
+@testable import ApplistPlugin
 
 class AppListTests: XCTestCase {
     func testEcho() {
